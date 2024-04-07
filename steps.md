@@ -1,6 +1,6 @@
 # Boilerplate Creation Steps
 
-- Update typescript config
+- Update typescript config ✅
 - Update eslint rules
 - Update prettier rules
 - Set up husky
