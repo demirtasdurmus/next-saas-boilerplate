@@ -41,6 +41,8 @@
             "endOfLine": "auto"
           }
         ],
+        // 👇 Avoid missing file extension errors, TypeScript already provides a similar feature
+        "import/extensions": "off",
         "react/jsx-curly-brace-presence": "off",
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
