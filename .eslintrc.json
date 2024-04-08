@@ -1,3 +1,54 @@
 {
-  "extends": "next/core-web-vitals"
+  // Configuration for javascript files
+  "extends": [
+    "airbnb-base",
+    // 👇 Needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration'
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // 👇 Avoid conflict rule between Prettier and Airbnb Eslint
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "overrides": [
+    // 👇 Configuration for Typescript files
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": ["@typescript-eslint", "unused-imports", "tailwindcss"],
+      "extends": [
+        "plugin:tailwindcss/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        // 👇 Avoid conflict rule between Prettier and Airbnb Eslint
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "endOfLine": "auto"
+          }
+        ],
+        "react/jsx-curly-brace-presence": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_" }
+        ]
+      }
+    }
+  ]
 }
