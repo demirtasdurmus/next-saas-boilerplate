@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format:check": "prettier --check . --cache",
-    "format:write": "prettier --write . --cache",
+    "format:check": "prettier --check . --cache --ignore-path .gitignore",
+    "format:write": "prettier --write . --cache --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
     "commit": "commit",
     "prepare": "husky"

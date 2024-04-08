@@ -1,5 +1,8 @@
 {
-  "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+  "*.{js,jsx,ts,tsx}": [
+    "eslint --fix",
+    "prettier --write --ignore-path .gitignore"
+  ],
   "**/*.ts?(x)": ["bash -c tsc -p tsconfig.json --noEmit"],
-  "*.{json,yaml}": ["prettier --write"]
+  "*.{json,yaml}": ["prettier --write --ignore-path .gitignore"]
 }
