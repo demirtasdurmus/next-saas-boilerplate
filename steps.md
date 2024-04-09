@@ -10,3 +10,8 @@
 - Set up Shadcn
 - Set up auth
 - Set up storybook
+- Set up Pino for logging
+- Set up Sentry
+- Set up a ci workflow
+- Set up semantic release for versioning
+- Set up an action job to update deps
