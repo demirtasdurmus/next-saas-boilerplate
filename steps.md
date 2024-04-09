@@ -7,12 +7,20 @@
 - Set up database with drizzle ✅
 - Set up tests with jest ✅
 - Set up tests with playwright ✅
-- Set up a ci workflow
+- Set up a ci workflow ✅
 - Set up localization with Next-intl
 - Set up Shadcn
+- Search for clerk as an auth provider
 - Set up auth
+- Search for codecov and integrate
+- Search for Percy and integrate
+- Search for storybook
 - Set up storybook
+- Search for Checkly and integrate
 - Set up Pino for logging
+- Search for Crowdin
 - Set up Sentry
 - Set up semantic release for versioning
 - Set up an action job to update deps
+- Set up next-sitemap
+- Set up dark mode
