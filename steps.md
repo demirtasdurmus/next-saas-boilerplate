@@ -5,7 +5,7 @@
 - Set up husky and lintstaged ✅
 - Set up commitlint and commit prompt ✅
 - Set up database with drizzle ✅
-- Set up tests with jest
+- Set up tests with jest ✅
 - Set up tests with playwright
 - Set up Shadcn
 - Set up auth
