@@ -45,6 +45,7 @@ jobs:
       - name: Build project for e2e tests
         run: npm run build
 
+      # https://dev.to/ayomiku222/how-to-cache-playwright-browser-on-github-actions-51o6
       - name: Install Playwright
         run: npx playwright install --with-deps
 
