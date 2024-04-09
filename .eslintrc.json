@@ -49,6 +49,11 @@
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
+        ],
+        // 👇 https://stackoverflow.com/questions/44939304/eslint-should-be-listed-in-the-projects-dependencies-not-devdependencies
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": true }
         ]
       }
     },
@@ -62,6 +67,17 @@
         "plugin:testing-library/react",
         "plugin:jest-dom/recommended"
       ]
+    },
+    // 👇 Configuration for e2e testing (Playwright)
+    {
+      "files": ["**/*.spec.ts"],
+      "extends": ["plugin:playwright/recommended"],
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": true }
+        ]
+      }
     }
   ]
 }
