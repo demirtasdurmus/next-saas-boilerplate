@@ -9,6 +9,7 @@
 - Set up tests with playwright ✅
 - Set up a ci workflow ✅
 - Search for codecov and integrate ✅
+- Set up an action job to update deps
 - Search for Crowdin
 - Set up localization with Next-intl
 - Set up Shadcn
@@ -21,6 +22,5 @@
 - Set up Pino for logging
 - Set up Sentry
 - Set up semantic release for versioning
-- Set up an action job to update deps
 - Set up next-sitemap
 - Set up dark mode
