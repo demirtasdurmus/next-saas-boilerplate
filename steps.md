@@ -9,7 +9,7 @@
 - Set up tests with playwright ✅
 - Set up a ci workflow ✅
 - Search for codecov and integrate ✅
-- Set up an action job to update deps
+- Set up an action job to update deps ✅
 - Search for Crowdin
 - Set up localization with Next-intl
 - Set up Shadcn
