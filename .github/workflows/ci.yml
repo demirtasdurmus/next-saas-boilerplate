@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build with node ${{ github.env.NODE_VERSION }}
+    name: Build with node
     runs-on: ubuntu-latest
 
     steps:
@@ -20,10 +20,10 @@ jobs:
         with:
           fetch-depth: 0 # Retrieve Git history, needed to verify commits
 
-      - name: Use Node.js version ${{github.env.NODE_VERSION}}
+      - name: Use Node.js version ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
-          node-version: ${{github.env.NODE_VERSION}}
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
       - name: Install deps
