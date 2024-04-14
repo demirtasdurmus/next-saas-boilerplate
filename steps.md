@@ -24,3 +24,4 @@
 - Set up semantic release for versioning
 - Set up next-sitemap
 - Set up dark mode
+- Set up playwright caching for ci.yml
