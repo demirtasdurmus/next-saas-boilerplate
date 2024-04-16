@@ -10,18 +10,18 @@
 - Set up a ci workflow ✅
 - Search for codecov and integrate ✅
 - Set up an action job to update deps ✅
-- Search for Crowdin
-- Set up localization with Next-intl
-- Set up Shadcn
+- Set up localization with Next-intl ✅
+- Search for Crowdin ✅
 - Search for clerk as an auth provider
 - Set up auth
 - Search for Percy and integrate
 - Search for storybook
 - Set up storybook
+- Set up Shadcn
+- Set up dark mode
 - Search for Checkly and integrate
 - Set up Pino for logging
 - Set up Sentry
 - Set up semantic release for versioning
 - Set up next-sitemap
-- Set up dark mode
 - Set up playwright caching for ci.yml
