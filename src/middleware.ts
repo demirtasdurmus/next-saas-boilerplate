@@ -34,7 +34,7 @@ export const config = {
      * Set a cookie to remember the previous locale for
      * all requests that have a locale prefix
      */
-    '/(en|tr)/:path*',
+    '/(en|de)/:path*',
 
     /**
      * Enable redirects that add missing locales

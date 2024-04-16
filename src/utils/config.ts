@@ -8,7 +8,7 @@ export const localePrefix: LocalePrefix = 'as-needed';
 
 export const localeDetails = [
   { id: 'en', name: 'English' },
-  { id: 'tr', name: 'Turkish' },
+  { id: 'de', name: 'Deutsch' },
 ];
 
 export const locales: AllLocales = localeDetails.map((locale) => locale.id);
@@ -19,10 +19,10 @@ export const pathnames: Pathnames<typeof locales> = {
   '/': '/',
   '/about': {
     en: '/about',
-    tr: '/hakkinda',
+    de: '/über',
   },
   '/example': {
     en: '/example',
-    tr: '/ornek',
+    de: '/beispiel',
   },
 };

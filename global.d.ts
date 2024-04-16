@@ -13,6 +13,9 @@ declare global {
       TURSO_CONNECTION_URL: string;
       TURSO_AUTH_TOKEN: string;
 
+      CROWDIN_PROJECT_ID: string;
+      CROWDIN_PERSONAL_TOKEN: string;
+
       // # Client env variables
       NEXT_PUBLIC_ENV: 'development' | 'sandbox' | 'staging' | 'production';
     }

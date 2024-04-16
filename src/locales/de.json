@@ -1,0 +1,12 @@
+{
+  "LocaleLayout": {
+    "title": "Next SAAS-Heizplatte",
+    "description": "Von Durmus Demirtas"
+  },
+  "Home": {
+    "home": "Zuhause",
+    "description": "Dies ist die Seitenbeschreibung",
+    "about": "Über",
+    "example": "Beispiel"
+  }
+}

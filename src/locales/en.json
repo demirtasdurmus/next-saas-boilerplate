@@ -5,6 +5,7 @@
   },
   "Home": {
     "home": "Home",
+    "description": "This is the page description",
     "about": "About",
     "example": "Example"
   }
