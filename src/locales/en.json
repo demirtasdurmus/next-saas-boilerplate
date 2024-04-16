@@ -1,0 +1,11 @@
+{
+  "LocaleLayout": {
+    "title": "Next SAAS Boilerplate",
+    "description": "By Durmus Demirtas"
+  },
+  "Home": {
+    "home": "Home",
+    "about": "About",
+    "example": "Example"
+  }
+}

@@ -1,4 +1,12 @@
+import en from './src/locales/en.json';
+
+type Messages = typeof en;
+
 declare global {
+  // Use type safe message keys with `next-intl`
+  interface IntlMessages extends Messages {}
+
+  // Nodejs process env typed variable
   namespace NodeJS {
     interface ProcessEnv {
       // # Server env variables
