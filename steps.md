@@ -12,8 +12,8 @@
 - Set up an action job to update deps ✅
 - Set up localization with Next-intl ✅
 - Search for Crowdin ✅
-- Search for clerk as an auth provider
-- Set up auth
+- Search for clerk as an auth provider ✅
+- Set up auth with Next-auth
 - Search for Percy and integrate
 - Search for storybook
 - Set up storybook
