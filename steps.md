@@ -14,7 +14,7 @@
 - Search for Crowdin ✅
 - Search for clerk as an auth provider ✅
 - Set up auth with Next-auth ✅
-- Search for Percy and integrate
+- Search for Percy and integrate (omitted for now as it is just a visualization add on to e2e tests) ✅
 - Search for storybook
 - Set up storybook
 - Set up Shadcn
