@@ -1,4 +1,4 @@
-import Home from '@/app/[locale]/page';
+import Home from '@/app/[locale]/(header-scope)/page';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { NextIntlClientProvider } from 'next-intl';

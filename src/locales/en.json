@@ -3,10 +3,17 @@
     "title": "Next SAAS Boilerplate",
     "description": "By Durmus Demirtas"
   },
+  "SignIn": {
+    "meta_title": "Sign in",
+    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
+  },
+  "SignUp": {
+    "meta_title": "Sign up",
+    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+  },
   "Home": {
     "home": "Home",
     "description": "This is the page description",
-    "about": "About",
-    "example": "Example"
+    "about": "About"
   }
 }

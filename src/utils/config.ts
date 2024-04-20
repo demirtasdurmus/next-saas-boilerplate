@@ -4,7 +4,7 @@ import {
   Pathnames,
 } from 'node_modules/next-intl/dist/types/src/shared/types';
 
-export const localePrefix: LocalePrefix = 'as-needed';
+export const localePrefix: LocalePrefix = 'never';
 
 export const localeDetails = [
   { id: 'en', name: 'English' },
