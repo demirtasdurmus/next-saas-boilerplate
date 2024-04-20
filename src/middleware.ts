@@ -1,5 +1,5 @@
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 import createMiddleware from 'next-intl/middleware';
-import { NextRequest } from 'next/server';
 import {
   defaultLocale,
   localePrefix,
@@ -8,22 +8,19 @@ import {
 } from './utils/config';
 
 const intlMiddleware = createMiddleware({
-  // A list of all locales that are supported
   locales,
-
-  // Used when no locale matches
   defaultLocale,
-
-  // The default locale can be used without a prefix (e.g. /about) rather than /about/en
   localePrefix,
-
-  // Maps internal pathnames to external ones which can be localized per locale.
   pathnames,
 });
 
-export async function middleware(req: NextRequest) {
+const isProtectedRoute = createRouteMatcher(['dashboard/(.*)']);
+
+export default clerkMiddleware((auth, req) => {
+  if (isProtectedRoute(req)) auth().protect();
+
   return intlMiddleware(req);
-}
+});
 
 export const config = {
   // Match only internationalized pathnames
@@ -41,5 +38,11 @@ export const config = {
      * (e.g. `/pathnames` -> `/en/pathnames`)
      */
     '/((?!_next|_vercel|.*\\..*).*)',
+
+    /**
+     * @see https://clerk.com/docs/references/nextjs/clerk-middleware
+     */
+    '/(api|trpc)(.*)',
+    '/((?!.+\\.[\\w]+$|_next).*)',
   ],
 };

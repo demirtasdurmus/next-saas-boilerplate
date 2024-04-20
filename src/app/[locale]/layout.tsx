@@ -1,4 +1,6 @@
 import '@/styles/globals.css';
+import { ClerkProvider } from '@clerk/nextjs';
+import { dark } from '@clerk/themes';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Inter } from 'next/font/google';
@@ -30,9 +32,16 @@ export default function RootLayout({ children, params: { locale } }: Props) {
   return (
     <html className="h-full" lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <ClerkProvider
+          afterSignOutUrl={'/sign-in'}
+          appearance={{
+            baseTheme: dark,
+          }}
+        >
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
