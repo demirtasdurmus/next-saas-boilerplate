@@ -3,10 +3,17 @@
     "title": "Next SAAS-Heizplatte",
     "description": "Von Durmus Demirtas"
   },
+  "SignIn": {
+    "meta_title": "Anmelden",
+    "meta_description": "Melden Sie sich nahtlos mit unserem benutzerfreundlichen Anmeldeprozess in Ihr Konto ein."
+  },
+  "SignUp": {
+    "meta_title": "Registrieren",
+    "meta_description": "Erstellen Sie mühelos ein Konto durch unseren intuitiven Anmeldeprozess."
+  },
   "Home": {
     "home": "Zuhause",
     "description": "Dies ist die Seitenbeschreibung",
-    "about": "Über",
-    "example": "Beispiel"
+    "about": "Über"
   }
 }

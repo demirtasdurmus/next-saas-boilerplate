@@ -11,7 +11,6 @@ export default function Home() {
 
       <div className="flex flex-row gap-4">
         <Link href="/about">{t('about')}</Link>
-        <Link href="/example">{t('example')}</Link>
       </div>
     </div>
   );

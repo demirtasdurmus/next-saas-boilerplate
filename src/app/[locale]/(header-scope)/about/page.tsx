@@ -10,7 +10,6 @@ export default function AboutPage() {
 
       <div className="flex flex-row gap-4">
         <Link href="/">{t('home')}</Link>
-        <Link href="/example">{t('example')}</Link>
       </div>
     </div>
   );
