@@ -15,13 +15,18 @@ export default function Header() {
           className="h-full w-28"
         />
       </Link>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
+      <div>
+        <Link href="/style-guide" className="text-secondary hover:text-primary">
+          Style Guide
+        </Link>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
 
-      <SignedIn>
-        <UserButton showName />
-      </SignedIn>
+        <SignedIn>
+          <UserButton showName />
+        </SignedIn>
+      </div>
     </header>
   );
 }
