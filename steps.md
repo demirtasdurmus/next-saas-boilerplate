@@ -15,9 +15,9 @@
 - Search for clerk as an auth provider ✅
 - Set up auth with Next-auth ✅
 - Search for Percy and integrate (omitted for now as it is just a visualization add on to e2e tests) ✅
+- Set up Shadcn
 - Search for storybook
 - Set up storybook
-- Set up Shadcn
 - Set up dark mode
 - Search for Checkly and integrate
 - Set up Pino for logging
