@@ -1,6 +1,7 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ModeToggle } from './ModeToggle';
 
 export default function Header() {
   return (
@@ -15,10 +16,13 @@ export default function Header() {
           className="h-full w-28"
         />
       </Link>
-      <div>
+      <div className="flex gap-4">
         <Link href="/style-guide" className="text-secondary hover:text-primary">
           Style Guide
         </Link>
+
+        <ModeToggle />
+
         <SignedOut>
           <SignInButton />
         </SignedOut>
