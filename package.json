@@ -94,8 +94,9 @@
     "prettier-plugin-tailwindcss": "^0.5.13",
     "storybook": "^8.0.9",
     "tailwindcss": "^3.4.3",
-    "ts-node": "^10.9.2",
+    "ts-node": "latest",
     "tsx": "^4.7.2",
-    "typescript": "^5.4.5"
+    "typescript": "latest",
+    "checkly": "latest"
   }
 }
