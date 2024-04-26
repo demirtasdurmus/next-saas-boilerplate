@@ -20,8 +20,9 @@
 - Set up storybook ✅
 - Set up dark mode ✅
 - Search for Checkly and integrate ✅
-- Set up Pino for logging
+- Set up Pino for logging ✅
+
 - Set up Sentry
+- Set up playwright caching for ci.yml
 - Set up semantic release for versioning
 - Set up next-sitemap
-- Set up playwright caching for ci.yml
