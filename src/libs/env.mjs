@@ -10,6 +10,7 @@ export const env = createEnv({
   server: {
     TURSO_CONNECTION_URL: z.string().min(1),
     TURSO_AUTH_TOKEN: z.string().min(1),
+    LOGTAIL_SOURCE_TOKEN: z.string().optional(),
   },
   /*
    * Environment variables available on the client (and server).
@@ -34,5 +35,6 @@ export const env = createEnv({
     TURSO_CONNECTION_URL: process.env.TURSO_CONNECTION_URL,
     TURSO_AUTH_TOKEN: process.env.TURSO_AUTH_TOKEN,
     NEXT_PUBLIC_ENV: process.env.NEXT_PUBLIC_ENV,
+    LOGTAIL_SOURCE_TOKEN: process.env.LOGTAIL_SOURCE_TOKEN,
   },
 });

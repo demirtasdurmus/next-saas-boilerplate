@@ -18,6 +18,8 @@ declare global {
 
       // # Client env variables
       NEXT_PUBLIC_ENV: 'development' | 'sandbox' | 'staging' | 'production';
+
+      LOGTAIL_SOURCE_TOKEN: string;
     }
   }
 }
