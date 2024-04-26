@@ -18,7 +18,7 @@
 - Set up Shadcn ✅
 - Search for storybook ✅
 - Set up storybook ✅
-- Set up dark mode
+- Set up dark mode ✅
 - Search for Checkly and integrate
 - Set up Pino for logging
 - Set up Sentry
