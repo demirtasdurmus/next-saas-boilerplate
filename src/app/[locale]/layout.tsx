@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/providers/ThemeProvider';
 import '@/styles/globals.css';
 // import { deDE, enUS } from '@clerk/localizations';
 import { ClerkProvider } from '@clerk/nextjs';
@@ -40,18 +41,25 @@ export default function RootLayout({ children, params: { locale } }: Props) {
   return (
     <html className="h-full" lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ClerkProvider
-            /* Disable due to a bug in userProfile component rerender problem */
-            // localization={clerkLocale}
-            appearance={{
-              baseTheme: dark,
-            }}
-            afterSignOutUrl={'sign-in'}
-          >
-            {children}
-          </ClerkProvider>
-        </NextIntlClientProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <ClerkProvider
+              /* Disable due to a bug in userProfile component rerender problem */
+              // localization={clerkLocale}
+              appearance={{
+                baseTheme: dark,
+              }}
+              afterSignOutUrl={'sign-in'}
+            >
+              {children}
+            </ClerkProvider>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
